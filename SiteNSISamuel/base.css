@@ -66,15 +66,12 @@ body {
 .header {
 	display: flex;
 	justify-content: space-around;
-	margin: 10px 200px 50px;
-	border: black;
-	border-style: solid;
+	margin: 10px 350px 50px;
 	object-fit: fill;
 	background-color: white;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
-	border-radius: 30px;
 	/* On définit une largeur */
     flex-basis: 10em;
     flex-basis: 3px;
