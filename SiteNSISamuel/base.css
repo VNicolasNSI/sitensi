@@ -174,3 +174,9 @@ hr {
     width: 100%;
     color: #8A9B9F;
 }
+.connexion  {
+    margin-bottom: 40px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+}
