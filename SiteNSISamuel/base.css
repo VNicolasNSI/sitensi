@@ -2,14 +2,14 @@ body {
 	background-color: #fff;
 	overflow: auto;
 	width: 100%;
-	background: linear-gradient(white, #96ADB8);
+	background: linear-gradient(white);
 
 }
 .body2 {
 	background-color: #fff;
 	overflow: auto;
 	width: 100%;
-	background: linear-gradient(white, #96ADB8);
+	background: linear-gradient(white);
 	height: 100%;
 
 }
