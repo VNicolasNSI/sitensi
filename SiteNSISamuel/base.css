@@ -136,7 +136,7 @@ body {
 	object-fit: fill;
 
 }
-button {
+.button {
     background-color: #dae5ff;
     color: black;
     size: 100px;
@@ -176,6 +176,8 @@ hr {
 }
 .connexion  {
     margin-bottom: 40px;
+	margin-top: 40px;
+	margin-left: 100px;
     width: 80%;
     text-align: center;
     align-items: center;
