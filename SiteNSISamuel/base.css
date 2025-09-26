@@ -168,3 +168,10 @@ button {
 	font-size: 2rem;
 	text-align: center;
 }
+hr {
+    height: 2px;
+    background: #8A9B9F;
+    margin: 20px 0;
+    width: 100%;
+    color: #8A9B9F;
+}
