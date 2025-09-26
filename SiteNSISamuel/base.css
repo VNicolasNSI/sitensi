@@ -145,6 +145,10 @@ body {
     border-radius: 50px;
     font-size: 20px;
     cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.button:hover {
+	transform: scale(1.1);
 }
 .haut {
 	display: flex;
