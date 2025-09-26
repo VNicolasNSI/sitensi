@@ -66,7 +66,7 @@ body {
 .header {
 	display: flex;
 	justify-content: space-around;
-	margin: 10px 10px 50px;
+	margin: 10px 10px 10px;
 	object-fit: fill;
 	background-color: #31ACC8;
 	box-shadow:
@@ -152,6 +152,7 @@ button {
 	justify-content: center;
 	object-fit: fill;
 	color: #016178;
+	font-size: larger;
 }
 .haut2 {
 	display: flex;
