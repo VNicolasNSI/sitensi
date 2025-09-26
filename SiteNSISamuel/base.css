@@ -150,15 +150,8 @@ button {
 .haut {
 	display: flex;
 	justify-content: center;
-	margin: 1em;
-	border: black;
-	border-style: solid;
 	object-fit: fill;
-	background-color: #31ACC8;
-	box-shadow:
-    inset 2px 2px 3px rgb(255 255 255 / 60%),
-    inset -2px -2px 3px rgb(0 0 0 / 60%);
-	border-radius: 30px;
+	color: #016178;
 }
 .haut2 {
 	display: flex;
