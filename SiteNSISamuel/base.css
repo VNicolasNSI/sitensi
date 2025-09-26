@@ -36,7 +36,7 @@ body {
 	border: black;
 	border-style: solid;
 	object-fit: fill;
-	background-color: white;
+	background-color: #31ACC8;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
@@ -68,7 +68,7 @@ body {
 	justify-content: space-around;
 	margin: 10px 350px 50px;
 	object-fit: fill;
-	background-color: white;
+	background-color: #31ACC8;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
@@ -101,7 +101,7 @@ body {
 	height: 150;
 	clip-path: polygon(0 0, 100% 0, 0 100%);
 	object-fit: fill;
-	background-color: white;
+	background-color: #31ACC8;
 	border-radius: 30px;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
@@ -117,7 +117,7 @@ body {
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
 	border-radius: 30px;
-	background-color: #fff;
+	background-color: #31ACC8;
 	text-align: center;
 }
 
@@ -154,7 +154,7 @@ button {
 	border: black;
 	border-style: solid;
 	object-fit: fill;
-	background-color: white;
+	background-color: #31ACC8;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
