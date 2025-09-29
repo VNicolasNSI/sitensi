@@ -32,7 +32,27 @@ catch (Exception $e)
 
 try
 {
-       if ($mdp==$verifmdp) {
+       $verify_email = $bdd->prepare('SELECT mail FROM utilisateur WHERE mail=:mail');
+}
+catch (Exception $e)
+{
+       die('Erreur : ' . $e->getMessage());
+}
+
+$verify_email->execute(array(
+       'mail'=> $mail
+));
+
+sleep(1);
+
+$verifyemail = $verify_email->fetch()
+    
+if ($verify_email==$mail) {            
+       echo "L'adresse mail existe déjà !";
+       header('Location: erreur/101.html');
+       exit();
+};
+if ($mdp==$verifmdp) {
        $inscription->execute(array(
               'Nom'=> $nom,
               'Prenom'=> $prenom,
@@ -42,15 +62,13 @@ try
               'idclasse' => '0',
               'type' => 'e'
        ));
+
        echo'Inscription réussie !';
-       }
-       else
-              echo'les mdp ne correspondent pas';
+       #header('Location: ../SiteNSISamuel/index.html');
+       #exit();
 }
-catch (Exception $e)
-{
-       die('Erreur : ' . $e->getMessage());
-}
+else
+       echo'les mdp ne correspondent pas';
 
 $inscription->closeCursor();
 ?>
