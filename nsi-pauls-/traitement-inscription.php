@@ -5,6 +5,8 @@
 try
 {
        $bdd = new PDO('mysql:host=localhost;dbname=nsilps', 'root', 'root');
+       $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 }
 catch (Exception $e)
 {
@@ -21,7 +23,7 @@ $verifmdp = $_POST['verifmdp'];
 
 try
 {
-       $inscription = $bdd->prepare('INSERT INTO utilisateur VALUES(:id, :Nom, :Prenom, :ddn, :idclasse, :type)');
+       $inscription = $bdd->prepare('INSERT INTO utilisateur(Nom, Prenom, mail, mdp, ddn, idclasse, type) VALUES(:Nom, :Prenom, :mail, :mdp, :ddn, :idclasse, :type)');
 }
 catch (Exception $e)
 {
@@ -32,14 +34,15 @@ try
 {
        if ($mdp==$verifmdp) {
        $inscription->execute(array(
-              'id' => null,
               'Nom'=> $nom,
               'Prenom'=> $prenom,
+              'mail'=> $mail,
+              'mdp'=> $mdp,
               'ddn'=> $ddn,
-              'idclasse' => 'sans_classe',
+              'idclasse' => '0',
               'type' => 'e'
        ));
-       echo'Les mdp correspondent';
+       echo'Inscription réussie !';
        }
        else
               echo'les mdp ne correspondent pas';
