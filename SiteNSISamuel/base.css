@@ -95,17 +95,13 @@ body {
 }
 .carre {
 	display: flex;
-	border: black;
-	border-style: solid;
-	width: 500;
-	height: 150;
-	object-fit: fill;
-	background-color: #016178;
-	border-radius: 30px;
-	box-shadow:
-    inset 2px 2px 3px rgb(255 255 255 / 60%),
-    inset -2px -2px 3px rgb(0 0 0 / 60%);
+
 }
+
+.carre:hover {
+	transform: scale(1.1);
+}
+
 .petitcarre {
 	display: flex;
 	border: black;
@@ -186,4 +182,16 @@ hr {
     text-align: center;
     align-items: center;
 	transition: all 0.3s ease-in-out;
+}
+.grosbutton {
+    background-color: #016178;
+    color: #8A9B9F;
+    size: 340px;
+    border-style: solid;
+	border-color: #8A9B9F;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+	
 }
