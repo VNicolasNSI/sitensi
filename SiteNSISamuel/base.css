@@ -93,12 +93,12 @@ body {
     flex-basis: initial;
     flex-basis: unset;
 }
-.carre {
+.attribut {
 	display: flex;
 
 }
 
-.carre:hover {
+.arttribut:hover {
 	transform: scale(1.1);
 }
 
@@ -183,14 +183,13 @@ hr {
     align-items: center;
 	transition: all 0.3s ease-in-out;
 }
-.grosbutton {
+.section {
     background-color: #dae5ff;
-    color: #8A9B9F;
-    size: 340px;
-    border-style: solid;
-	border-color: #8A9B9F;
+    color: black;
+    size: 100px;
+    border: none;
     padding: 15px 32px;
-    border-radius: 30px;
+    border-radius: 50px;
     font-size: 20px;
     cursor: pointer;
 	
