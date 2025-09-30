@@ -43,32 +43,20 @@
 			</article>
 		<section class="base1">
 			<article class="attribut">
-				<a role="button" href="depot.html" class="button">Cours PDF</a>
+				<a role="button" href="depot.php" class="button">Cours PDF</a>
 			</article>
 			<article class="attribut">
-				<a role="button" href="synthese.html" class="button">Synthèse / Progression</a>
+				<a role="button" href="synthese.php" class="button">Synthèse / Progression</a>
 			</article>
 		</section>
 		<section class="base1">
 			<article class="attribut">
-				<a role="button" href="quizz.html" class="button">Testez-Vous ! </a>
+				<a role="button" href="quizz.php" class="button">Testez-Vous ! </a>
 			</article>
 			<article class="attribut">
-				<a role="button" href="code.html" class="button">Rentrer un code</a>
+				<a role="button" href="code.php" class="button">Rentrer un code</a>
 			</article>
 		</section>	
-		<section class="base1">
-			<article class="petitcarre">
-				<h1>
-					<a href="problemes.html" >Un probleme ?</a>
-				</h1>
-			</article>
-			<article class="petitcarre">
-				<h1>
-					<a href="retour.php">Donnez nous votre avis !</a>
-				</h1>
-			</article>
-		</section>
 	</section>
 </section>
 <footer> 
