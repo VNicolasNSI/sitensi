@@ -187,10 +187,10 @@ hr {
 .partie {
     background-color: #dae5ff;
     color: black;
-    size: 100px;
+    size: 340px;
     border: none;
     padding: 15px 32px;
-    border-radius: 50px;
+    border-radius: 30px;
     font-size: 20px;
     cursor: pointer;
 	
