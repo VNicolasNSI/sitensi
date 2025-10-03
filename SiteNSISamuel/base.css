@@ -50,8 +50,8 @@ body {
 
 }
 
-.arttribut:hover {
-	transform: scale(1.1);
+.arttributa:hover {
+	transform: scale(1.2);
 }
 
 
@@ -63,7 +63,7 @@ body {
 }
 
 .button {
-    background-color: black;
+    background-color: #dae5ff;
     color: black;
     size: 100px;
     border: none;
@@ -113,26 +113,18 @@ hr {
     align-items: center;
 	transition: all 0.3s ease-in-out;
 }
-.partie {
-    background-color: #016178;
-    color: pink;
-    size: 340px;
-    border: none;
-    padding: 15px 32px;
-    border-radius: 30px;
-    font-size: 20px;
-    cursor: pointer;
-	
-}
-.attribut a
+
+.attributa
 {
 	background-color: #016178;
-    color: pink;
-    size: 340px;
+    color: whitesmoke;
+    width: 340px;
+	height: 120px;
     border: none;
     padding: 15px 32px;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+	transition: all 0.3s ease-in-out;
 
 }

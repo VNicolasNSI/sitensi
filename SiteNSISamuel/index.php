@@ -53,19 +53,19 @@ try {
 			</article>
 		</section>
 		<section>
-			<article class="attribut">
-				<a role="button" href="depot.php" class="partie">Cours PDF</a>
+			<article class="connexion">
+				<a role="button" href="depot.php" class="attributa">Cours PDF</a>
 			</article>
-			<article class="attribut">
-				<a role="button" href="synthese.php" class="partie">Synthèse / Progression</a>
+			<article class="connexion">
+				<a role="button" href="synthese.php" class="attributa">Synthèse / Progression</a>
 			</article>
 		</section>
 		<section>
-			<article class="attribut">
-				<a role="button" href="quizz.php" class="partie">Testez-Vous ! </a>
+			<article class="connexion">
+				<a role="button" href="quizz.php" class="attributa">Testez-Vous ! </a>
 			</article>
-			<article class="attribut">
-				<a role="button" href="code.php" class="partie">Rentrer un code</a>
+			<article class="connexion">
+				<a role="button" href="code.php" class="attributa">Rentrer un code</a>
 			</article>
 		</section>	
 	</section>
