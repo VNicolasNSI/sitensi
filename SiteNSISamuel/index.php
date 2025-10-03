@@ -52,7 +52,7 @@ try {
 				<a role="button" href="..\nsi-pauls-\index.html" class="button">DÉCONNEXION</a>
 			</article>
 		</section>
-		<section class="base1">
+		<section>
 			<article class="attribut">
 				<a role="button" href="depot.php" class="partie">Cours PDF</a>
 			</article>
@@ -60,7 +60,7 @@ try {
 				<a role="button" href="synthese.php" class="partie">Synthèse / Progression</a>
 			</article>
 		</section>
-		<section class="base1">
+		<section>
 			<article class="attribut">
 				<a role="button" href="quizz.php" class="partie">Testez-Vous ! </a>
 			</article>

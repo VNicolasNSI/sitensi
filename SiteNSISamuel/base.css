@@ -61,15 +61,7 @@ body {
 	font-size: 1.2rem;
 
 }
-.base1 {
-	display: flex;
-	justify-content: space-around;
-	margin: 1em;
-	object-fit: fill;
-	background-color: #016178;
-	color: pink;
 
-}
 .button {
     background-color: black;
     color: black;
