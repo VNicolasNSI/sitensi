@@ -17,17 +17,6 @@ body {
 	display: flex;
 	justify-content: center;
 }
-.droite {
-	display: flex;
-	justify-content: flex-end;
-	border: black;
-	border-style: solid;
-	margin: 1em;
-	box-shadow:
-    inset 2px 2px 3px rgb(255 255 255 / 60%),
-    inset -2px -2px 3px rgb(0 0 0 / 60%);
-	border-radius: 30px;
-}
 
 .base {
 	display: flex;
@@ -41,26 +30,7 @@ body {
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
 	border-radius: 30px;
-	/* On définit une largeur */
-    flex-basis: 10em;
-    flex-basis: 3px;
-    flex-basis: auto;
 
-    /* On utilise les dimensions       */
-    /* intrinsèques avec des mots-clés */
-    flex-basis: fill;
-    flex-basis: max-content;
-    flex-basis: min-content;
-    flex-basis: fit-content;
-
-    /* La taille se calcule automatiquement */
-    /* en fonction du contenu de l'élément  */
-    flex-basis: content;
-
-    /* Valeurs globales */
-    flex-basis: inherit;
-    flex-basis: initial;
-    flex-basis: unset;
 }
 
 .header {
@@ -84,23 +54,7 @@ body {
 	transform: scale(1.1);
 }
 
-.petitcarre {
-	display: flex;
-	border: black;
-	border-style: solid;
-	width: 250;
-	height: 75;
-	box-shadow:
-    inset 2px 2px 3px rgb(255 255 255 / 60%),
-    inset -2px -2px 3px rgb(0 0 0 / 60%);
-	border-radius: 30px;
-	background-color: #016178;
-	text-align: center;
-}
 
-.shape {
-	clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
-}
 
 .text{
 	transform: rotate(345deg);
@@ -112,10 +66,12 @@ body {
 	justify-content: space-around;
 	margin: 1em;
 	object-fit: fill;
+	background-color: #016178;
+	color: pink;
 
 }
 .button {
-    background-color: #016178;
+    background-color: black;
     color: black;
     size: 100px;
     border: none;
@@ -167,7 +123,7 @@ hr {
 }
 .partie {
     background-color: #016178;
-    color: black;
+    color: pink;
     size: 340px;
     border: none;
     padding: 15px 32px;
@@ -175,4 +131,16 @@ hr {
     font-size: 20px;
     cursor: pointer;
 	
+}
+.attribut a
+{
+	background-color: #016178;
+    color: pink;
+    size: 340px;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+
 }

@@ -49,7 +49,7 @@ try {
 	<section class="header">
 		<section>
 			<article class="connexion">
-				<a role="button" href="..\nsi-pauls-\index.html" class="partie">DÉCONNEXION</a>
+				<a role="button" href="..\nsi-pauls-\index.html" class="button">DÉCONNEXION</a>
 			</article>
 		</section>
 		<section class="base1">
