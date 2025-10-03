@@ -12,4 +12,20 @@ try {
 $mail = $_POST['mail'];
 $mdp = $_POST['mdp'];
 
+$verifmail = $bdd->prepare('SELECT mail FROM utilisateur WHERE mail=:mail');
+$verifmail->execute([
+    'mail'=> $mail,
+]);
+$verification = $verifmail->fetch();
+$verifmdp = $bdd->prepare('SELECT mdp FROM utilisateur WHERE mail=:mail');
+$verifmdp->execute([
+    'mail'=>$mail
+]);
+$verificationmdp = $verifmdp->fetch();
+
+if ($mail==$verification) {
+    if ($mdp==$verificationmdp) {
+        echo "Connexion réussie !";
+    }
+}
 ?>
