@@ -47,10 +47,11 @@ try {
 		</article>
 	</section>
 	<section class="header">
-		<sectionn>
+		<section>
 			<article class="connexion">
 				<a role="button" href="..\nsi-pauls-\index.html" class="partie">DÉCONNEXION</a>
 			</article>
+		</section>
 		<section class="base1">
 			<article class="attribut">
 				<a role="button" href="depot.php" class="partie">Cours PDF</a>

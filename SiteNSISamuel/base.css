@@ -72,26 +72,7 @@ body {
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
-	/* On définit une largeur */
-    flex-basis: 10em;
-    flex-basis: 3px;
-    flex-basis: auto;
-
-    /* On utilise les dimensions       */
-    /* intrinsèques avec des mots-clés */
-    flex-basis: fill;
-    flex-basis: max-content;
-    flex-basis: min-content;
-    flex-basis: fit-content;
-
-    /* La taille se calcule automatiquement */
-    /* en fonction du contenu de l'élément  */
-    flex-basis: content;
-
-    /* Valeurs globales */
-    flex-basis: inherit;
-    flex-basis: initial;
-    flex-basis: unset;
+	
 }
 .attribut {
 	display: flex;
