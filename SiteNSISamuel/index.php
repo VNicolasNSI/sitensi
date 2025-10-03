@@ -37,7 +37,6 @@ try {
 				height="200">
 			</figure>
 		</article>
-		<article></article>
 	</header>
 </section>
 <section>
@@ -50,7 +49,7 @@ try {
 	<section class="header">
 		<sectionn>
 			<article class="connexion">
-				<a role="button" href="..\nsi-pauls-\index.html" class="button">DÉCONNEXION</a>
+				<a role="button" href="..\nsi-pauls-\index.html" class="partie">DÉCONNEXION</a>
 			</article>
 		<section class="base1">
 			<article class="attribut">
