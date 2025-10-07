@@ -44,17 +44,6 @@ body {
     inset -2px -2px 3px rgb(0 0 0 / 60%);
 	
 }
-.attribut {
-	display: flex;
-	transition: all 0.3s ease-in-out;
-
-}
-
-.arttributa:hover {
-	transform: scale(1.2);
-}
-
-
 
 .text{
 	transform: rotate(345deg);
@@ -65,11 +54,10 @@ body {
 .button {
     background-color: #dae5ff;
     color: black;
-    size: 100px;
-    border: none;
+    border: solid;
     padding: 15px 32px;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 	
 }
@@ -107,11 +95,11 @@ hr {
 .connexion  {
     margin-bottom: 40px;
 	margin-top: 40px;
-	margin-left: 105px;
     width: 80%;
     text-align: center;
     align-items: center;
 	transition: all 0.3s ease-in-out;
+	flex-direction: column;
 }
 
 .attributa
@@ -121,10 +109,30 @@ hr {
     width: 340px;
 	height: 120px;
     border: none;
-    padding: 15px 32px;
+    padding: 2rem 2rem 2rem 4rem;
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
 	transition: all 0.3s ease-in-out;
 
+}
+
+.partie1 {
+	display: flex;
+	justify-content: center;
+	
+}
+.partie2 {
+	display: flex;
+	justify-content: space-around;
+	background-color: #31ACC8;
+	box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 60%),
+    inset -2px -2px 3px rgb(0 0 0 / 60%);
+	flex-wrap: wrap;
+	
+}
+.postion {
+	position: relative;
+	
 }
