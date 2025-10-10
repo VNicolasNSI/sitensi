@@ -2,6 +2,8 @@
 
 <?php 
 
+session_start();
+
 try {
     $bdd = new PDO('mysql:host=sql7.freesqldatabase.com;dbname=sql7800701', 'sql7800701', 'bfhPTiR56K');
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -49,7 +51,7 @@ try {
                             'type'     => 'e',
                             'token'    => $token
                      ]);
-                     setcookie('token', $token);
+                     $_SESSION['token'] = $token;
                      echo 'Inscription réussie !';
                      header('Location: ../SiteNSISamuel/index.php');
                      exit();
