@@ -51,7 +51,7 @@ try {
                      ]);
                      setcookie('token', $token);
                      echo 'Inscription réussie !';
-                     header('Location: ../SiteNSISamuel/index.html');
+                     header('Location: ../SiteNSISamuel/index.php');
                      exit();
               } else {
                      echo 'Les mdp ne correspondent pas';

@@ -35,7 +35,7 @@ if ($vtoken!=$token) {
             'token'=>$token,
             'mail'=>$mail,
         ]);
-        header('Location: ../SiteNSISamuel/index.html');
+        header('Location: ../SiteNSISamuel/index.php');
         exit();
     }
     else {
