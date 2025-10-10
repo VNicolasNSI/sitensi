@@ -29,13 +29,11 @@ try {
 	<header class="header"> 
 		<article></article>
 		<nav>
-			<ol>
-				<li><a href="index.html">Acceuil</a></li>
-				<li>Première</li>
-				<li>Terminale</li>
-				<li>Projet</li>
-				<li>Défis</li>
-			</ol>
+			<a href="index.php">Acceuil</a></li>
+			<a href="premiere.php">Première</a></li>
+			<a href="terminale.php">Terminale</a></li>
+			<a href="projet">Projet</a></li>
+			<a href="defis">Défis</a></li>
 		</nav>
 	</header>
 </section>
