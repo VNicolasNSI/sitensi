@@ -139,7 +139,8 @@ hr {
 	height: 50px;
     border-style: solid;
     padding: 1rem 1rem 1rem 1rem;
-	margin: 10px;
+	margin: 50px;
+	padding: 10px;
     font-size: 20px;
     cursor: pointer;
 	transition: all 0.3s ease-in-out;
@@ -159,3 +160,8 @@ hr {
 	transition: all 0.3s ease-in-out;
 
 }
+
+.nav2:hover {
+	border-color: #016178;
+}
+
