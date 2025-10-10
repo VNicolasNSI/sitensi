@@ -19,7 +19,7 @@ $verifmdp = $_POST['verifmdp'];
 $verifyemail = array();
 
 try {
-       $inscription = $bdd->prepare('INSERT INTO utilisateur(Nom, Prenom, mail, mdp, ddn, idclasse, type) VALUES(:Nom, :Prenom, :mail, :mdp, :ddn, :idclasse, :type)');
+       $inscription = $bdd->prepare('INSERT INTO utilisateur(Nom, Prenom, mail, mdp, ddn, idclasse, type, token) VALUES(:Nom, :Prenom, :mail, :mdp, :ddn, :idclasse, :type, :token)');
 } catch (Exception $e) {
        die('Erreur : ' . $e->getMessage());
 }
@@ -46,17 +46,11 @@ try {
                             'mdp'      => $mdp,
                             'ddn'      => $ddn,
                             'idclasse' => 0,
-                            'type'     => 'e'
+                            'type'     => 'e',
+                            'token'    => $token
                      ]);
-
-                     echo 'Inscription réussie !';
                      setcookie('token', $token);
-                     $ecriretoken = $bdd->prepare('UPDATE FROM utilisateur SET token=:token WHERE mail=:mail');
-                     $ecriretoken->execute([
-                            'token'=>$token,
-                            'mail'=>$mail,
-                     ]);
-
+                     echo 'Inscription réussie !';
                      header('Location: ../SiteNSISamuel/index.html');
                      exit();
               } else {
