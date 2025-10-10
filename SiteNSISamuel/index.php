@@ -29,11 +29,11 @@ try {
 	<header class="header"> 
 		<article></article>
 		<nav>
-			<a class="" role="button" href="index.php">Acceuil</a></li>
-			<a role="button" href="premiere.php">Première</a></li>
-			<a role="button" href="terminale.php">Terminale</a></li>
-			<a role="button" href="projet">Projet</a></li>
-			<a role="button" href="defis">Défis</a></li>
+			<a class="nav1" role="button" href="index.php">Acceuil</a></li>
+			<a class="nav2" role="button" href="premiere.php">Première</a></li>
+			<a class="nav2" role="button" href="terminale.php">Terminale</a></li>
+			<a class="nav2" role="button" href="projet">Projet</a></li>
+			<a class="nav2" role="button" href="defis">Défis</a></li>
 		</nav>
 	</header>
 </section>
