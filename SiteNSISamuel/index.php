@@ -15,7 +15,7 @@ try {
 ?>
 
 <head>
-<title>GoofyAhhSite</title> 
+<title>GoofyAhhSite</title>
 
 <meta charset="utf-8">
 
