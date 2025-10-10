@@ -28,9 +28,15 @@ try {
 <section>
 	<header class="header"> 
 		<article></article>
-		<article>
-			
-		</article>
+		<nav>
+			<ol>
+				<li><a href="index.html">Acceuil</a></li>
+				<li>Première</li>
+				<li>Terminale</li>
+				<li>Projet</li>
+				<li>Défis</li>
+			</ol>
+		</nav>
 	</header>
 </section>
 <section>
