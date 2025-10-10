@@ -24,6 +24,8 @@ try {
        die('Erreur : ' . $e->getMessage());
 }
 
+$token = rand(10000000,99999999);
+
 try {
        $verify_email = $bdd->prepare('SELECT mail FROM utilisateur WHERE mail = :mail');
        $verify_email->execute([
@@ -48,6 +50,13 @@ try {
                      ]);
 
                      echo 'Inscription réussie !';
+                     setcookie('token', $token);
+                     $ecriretoken = $bdd->prepare('UPDATE FROM utilisateur SET token=:token WHERE mail=:mail');
+                     $ecriretoken->execute([
+                            'token'=>$token,
+                            'mail'=>$mail,
+                     ]);
+
                      header('Location: ../SiteNSISamuel/index.html');
                      exit();
               } else {
