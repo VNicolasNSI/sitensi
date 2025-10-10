@@ -60,7 +60,7 @@ body {
 	
 }
 .connexion:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 .haut {
 	display: flex;
@@ -158,9 +158,4 @@ hr {
     cursor: pointer;
 	transition: all 0.3s ease-in-out;
 
-}
-
-.postion {
-	position: relative;
-	
 }
