@@ -12,20 +12,38 @@ try {
 $mail = $_POST['mail'];
 $mdp = $_POST['mdp'];
 
-$verifmail = $bdd->prepare('SELECT mail FROM utilisateur WHERE mail=:mail');
-$verifmail->execute([
-    'mail'=> $mail,
-]);
-$verification = $verifmail->fetch();
 $verifmdp = $bdd->prepare('SELECT mdp FROM utilisateur WHERE mail=:mail');
 $verifmdp->execute([
-    'mail'=>$mail
+    'mail'=>$mail,
 ]);
 $verificationmdp = $verifmdp->fetch();
 
-if ($mail==$verification) {
-    if ($mdp==$verificationmdp) {
+$vcookie = $bdd->prepare('SELECT token FROM utilisateur WHERE mail=:mail');
+$vcookie->execute([
+    'mail'=>$mail,
+]);
+$vtoken = $vcookie->fetch();
+
+$token = rand(10000000,99999999);
+
+if ($vtoken!=$token) {
+    if ($mdp==$verificationmdp[0]) {
         echo "Connexion réussie !";
+        setcookie('token', $token);
+        $ecriretoken = $bdd->prepare('UPDATE FROM utilisateur SET token=:token WHERE mail=:mail');
+        $ecriretoken->execute([
+            'token'=>$token,
+            'mail'=>$mail,
+        ]);
+        header('Location: ../SiteNSISamuel/index.html');
+        exit();
     }
+    else {
+        echo "Mauvais mdp ou mauvais mail";
+    };
 }
+else {
+
+}
+
 ?>
