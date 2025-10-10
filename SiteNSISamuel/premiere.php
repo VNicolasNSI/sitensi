@@ -49,6 +49,7 @@ try {
 		</article>
 	</section>
 	<section class="partie2">
+		<h1>Parcours de première</h1>
 		<article class="connexion">
 			<a role="button" href="depot.php" class="attributa">
 			<img width="50" height="50" title="1" src="https://cdn-icons-png.flaticon.com/512/80/80942.png">
