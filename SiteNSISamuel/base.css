@@ -130,10 +130,7 @@ hr {
 	flex-wrap: wrap;
 	
 }
-.postion {
-	position: relative;
-	
-}
+
 .nav1
 {
 	background-color: #016178;
@@ -163,4 +160,8 @@ hr {
     cursor: pointer;
 	transition: all 0.3s ease-in-out;
 
+}
+.postion {
+	position: relative;
+	
 }
