@@ -40,7 +40,7 @@ try {
 <section>
 	<section class="haut">
 		<article>
-			<h1>BONJOUR nom de l'élev !</h1>
+			<h1>BONJOUR nom de l'éleve !</h1>
 			<hr>
 		</article>
 	</section>
