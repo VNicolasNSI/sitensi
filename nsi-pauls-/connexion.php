@@ -1,5 +1,29 @@
 <!doctype html>
 <html>
+
+    <?php 
+    session_start();
+
+    try {
+        $bdd = new PDO('mysql:host=sql7.freesqldatabase.com;dbname=sql7800701', 'sql7800701', 'bfhPTiR56K');
+        $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (Exception $e) {
+        die('Erreur : ' . $e->getMessage());
+    }
+
+    $session=$bdd->prepare('SELECT token FROM utilisateur WHERE token=:token');
+    $session->execute([
+        'token'=> $_SESSION['token'],
+    ]);
+
+    $vsession=$session->fetch();
+
+    if ($vsession['0']== $_SESSION['token']) {
+        header('Location: ../SiteNSISamuel/index.php');
+        exit();
+    }
+    ?>
+
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="accueil.css">

@@ -2,6 +2,8 @@
 
 <?php 
 
+session_start();
+
 try {
     $bdd = new PDO('mysql:host=sql7.freesqldatabase.com;dbname=sql7800701', 'sql7800701', 'bfhPTiR56K');
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -19,7 +21,7 @@ $verifmdp = $_POST['verifmdp'];
 $verifyemail = array();
 
 try {
-       $inscription = $bdd->prepare('INSERT INTO utilisateur(Nom, Prenom, mail, mdp, ddn, idclasse, type) VALUES(:Nom, :Prenom, :mail, :mdp, :ddn, :idclasse, :type)');
+       $inscription = $bdd->prepare('INSERT INTO utilisateur(Nom, Prenom, mail, mdp, ddn, idclasse, type, token) VALUES(:Nom, :Prenom, :mail, :mdp, :ddn, :idclasse, :type, :token)');
 } catch (Exception $e) {
        die('Erreur : ' . $e->getMessage());
 }
@@ -46,18 +48,12 @@ try {
                             'mdp'      => $mdp,
                             'ddn'      => $ddn,
                             'idclasse' => 0,
-                            'type'     => 'e'
+                            'type'     => 'e',
+                            'token'    => $token
                      ]);
-
+                     $_SESSION['token'] = $token;
                      echo 'Inscription réussie !';
-                     setcookie('token', $token);
-                     $ecriretoken = $bdd->prepare('UPDATE FROM utilisateur SET token=:token WHERE mail=:mail');
-                     $ecriretoken->execute([
-                            'token'=>$token,
-                            'mail'=>$mail,
-                     ]);
-
-                     header('Location: ../SiteNSISamuel/index.html');
+                     header('Location: ../SiteNSISamuel/index.php');
                      exit();
               } else {
                      echo 'Les mdp ne correspondent pas';
