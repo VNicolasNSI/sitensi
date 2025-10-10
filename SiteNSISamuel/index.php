@@ -29,20 +29,14 @@ try {
 	<header class="header"> 
 		<article></article>
 		<article>
-			<figure class="centre">
-				<img src="file://///lise.kreizenn.bzh/pedagogique/290022S/CLASSES/290022S_T-C/Documents%20en%20consultation/NSI/LogoNSI.jpg"
-				name="Le logo ne notre sainte spé, la meilleure de toutes, rejoingez nous !"
-				alt="Logo NSI PS"
-				width="200"
-				height="200">
-			</figure>
+			
 		</article>
 	</header>
 </section>
 <section>
 	<section class="haut">
 		<article>
-			<h1>BONJOUR !</h1>
+			<h1>BONJOUR nom de l'éleve !</h1>
 			<hr>
 		</article>
 	</section>
