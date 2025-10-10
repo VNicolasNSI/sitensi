@@ -27,7 +27,6 @@ try {
 
 <section>
 	<header class="header"> 
-		<article></article>
 		<nav>
 			<a class="nav1" role="button" href="index.php">Acceuil</a></li>
 			<a class="nav2" role="button" href="premiere.php">Première</a></li>
