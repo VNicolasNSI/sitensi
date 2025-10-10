@@ -140,7 +140,6 @@ hr {
     border-style: solid;
     padding: 1rem 1rem 1rem 1rem;
 	margin: 10px;
-    border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
 	transition: all 0.3s ease-in-out;
@@ -155,12 +154,12 @@ hr {
     border-style: solid;
     padding: 1rem 1rem 1rem 1rem;
 	margin: 10px;
-    border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
 	transition: all 0.3s ease-in-out;
 
 }
+
 .postion {
 	position: relative;
 	
