@@ -27,13 +27,19 @@ try {
 
 <section>
 	<header class="header"> 
-		<nav>
-			<a class="nav2" role="button" href="index.php">Acceuil</a></li>
-			<a class="nav1" role="button" href="premiere.php">Première</a></li>
-			<a class="nav2" role="button" href="terminale.php">Terminale</a></li>
-			<a class="nav2" role="button" href="projet">Projet</a></li>
-			<a class="nav2" role="button" href="defis">Défis</a></li>
-		</nav>
+		<section class="page1">
+			<article>
+				<h1 class="avantpage">Page d'acceuil éléve</h1>
+			<article>
+			<nav>
+				<a class="nav1" role="button" href="index.php">Acceuil</a></li>
+				<a class="nav2" role="button" href="premiere.php">Première</a></li>
+				<a class="nav2" role="button" href="terminale.php">Terminale</a></li>
+				<a class="nav2" role="button" href="projet">Projet</a></li>
+				<a class="nav2" role="button" href="defis">Défis</a></li>
+			</nav>
+			<article><hr></article>
+		</section>
 	</header>
 </section>
 <section>
