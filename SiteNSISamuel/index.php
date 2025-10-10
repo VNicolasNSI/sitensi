@@ -52,25 +52,25 @@ try {
 		<article class="connexion">
 			<a role="button" href="depot.php" class="attributa">
 			<img width="50" height="50" title="1" src="https://cdn-icons-png.flaticon.com/512/80/80942.png">
-			Cours PDF
+			⠀⠀⠀⠀Cours PDF
 			</a>
 		</article>
 		<article class="connexion">
 			<a role="button" href="synthese.php" class="attributa">
 			<img width="50" height="50" title="8" src="https://cdn-icons-png.flaticon.com/512/722/722013.png">
-			Synthèse / Progression
+			⠀⠀⠀⠀Synthèse / Progression
 			</a>
 		</article>
 		<article class="connexion">
 			<a role="button" href="quizz.php" class="attributa">
 			<img width="50" height="50" title="0" src="https://cdn-icons-png.flaticon.com/512/3400/3400784.png">
-			Testez-Vous !
+			⠀⠀⠀⠀Testez-Vous !
 			</a>
 		</article>
 		<article class="connexion">
 			<a role="button" href="code.php" class="attributa">
 			<img width="50" height="50" title="9" src="https://cdn-icons-png.flaticon.com/512/345/345535.png">
-			Rentrer un code
+			⠀⠀⠀⠀Rentrer un code
 			</a>
 		</article>
 	</section>	
