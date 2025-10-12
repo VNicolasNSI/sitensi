@@ -41,7 +41,7 @@ if ($mdp==$verificationmdp[0]) {
         header('Location: /dashboard/profs/menu.php');
         exit();
     } else {
-        header('Location: ../SiteNSISamuel/index.php');
+        header('Location: /dashboard/eleves/index.php');
         exit();
     }
 }

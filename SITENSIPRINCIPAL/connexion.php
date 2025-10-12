@@ -22,7 +22,7 @@
         if ($vsession['0']>=10000000) {
             if ($vsession['0'] == $_SESSION['token']) {
                 echo "Connexion directe";
-                header('Location: ../SiteNSISamuel/index.php');
+                header('Location: /dashboard/eleves/index.php');
                 exit();
             }
             else {

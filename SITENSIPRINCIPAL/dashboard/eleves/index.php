@@ -53,7 +53,7 @@ try {
 	</section>
 	<section class="partie1">
 		<article class="connexion">
-			<a role="button" href="..\nsi-pauls-\deconnexion.php" class="button">DÉCONNEXION</a>
+			<a role="button" href="../../deconnexion.php" class="button">DÉCONNEXION</a>
 		</article>
 	</section>
 	<section class="partie2">
