@@ -20,14 +20,7 @@ $verifmdp->execute([
 ]);
 $verificationmdp = $verifmdp->fetch();
 
-$vcookie = $bdd->prepare('SELECT token FROM utilisateur WHERE mail=:mail');
-$vcookie->execute([
-    'mail'=>$mail,
-]);
-$vtoken = $vcookie->fetch();
-
 $token = rand(10000000,99999999);
-
 
 if ($mdp==$verificationmdp[0]) {
     echo "Connexion réussie !";

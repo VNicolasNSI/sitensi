@@ -11,16 +11,19 @@
         die('Erreur : ' . $e->getMessage());
     }
 
-    $session=$bdd->prepare('SELECT token FROM utilisateur WHERE token=:token');
-    $session->execute([
-        'token'=> $_SESSION['token'],
-    ]);
+    if (isset($_SESSION['token'])) {
+        $session=$bdd->prepare('SELECT token FROM utilisateur WHERE token=:token');
+        $session->execute([
+            'token'=> $_SESSION['token'],
+        ]);
 
-    $vsession=$session->fetch();
+        $vsession=$session->fetch();
 
-    if ($vsession['0']== $_SESSION['token']) {
-        header('Location: ../SiteNSISamuel/index.php');
-        exit();
+        if ($vsession['0']>=10000000) {
+            if ($vsession['0']== $_SESSION['token']) {
+                echo "Connexion directe";
+            }
+    }
     }
     ?>
 
