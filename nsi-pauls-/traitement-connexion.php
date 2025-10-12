@@ -30,8 +30,20 @@ if ($mdp==$verificationmdp[0]) {
         'mail'=>$mail,
     ]);
     $_SESSION['token'] = $token;
-    header('Location: ../SiteNSISamuel/index.php');
-    exit();
+
+    $type = $bdd->prepare('SELECT type FROM utilisateur WHERE mail=:mail');
+    $type->execute([
+        'mail'=>$mail,
+    ]);
+    $profeleve = $type->fetch();
+
+    if ($profeleve['0'] == 'p') {
+        header('Location: /dashboard/profs/menu.php');
+        exit();
+    } else {
+        header('Location: ../SiteNSISamuel/index.php');
+        exit();
+    }
 }
 else {
     echo "Mauvais mdp ou mauvais mail";

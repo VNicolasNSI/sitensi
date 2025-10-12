@@ -26,7 +26,7 @@
                 <label>Navigation</label>
             </article>
             <article class="espaceaside">
-                <a class="adash" href="dash_prof.html">Menu</a>
+                <a class="adash" href="menu.php">Menu</a>
                 <hr>
                 <a class="adash" href="classes.html">Mes classes</a>
             </article>
