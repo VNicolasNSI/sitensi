@@ -24,7 +24,7 @@ $token = rand(10000000,99999999);
 
 if ($mdp==$verificationmdp[0]) {
     echo "Connexion réussie !";
-    $ecriretoken = $bdd->prepare('UPDATE FROM utilisateur SET token=:token WHERE mail=:mail');
+    $ecriretoken = $bdd->prepare('UPDATE utilisateur SET token=:token WHERE mail=:mail');
     $ecriretoken->execute([
         'token'=>$token,
         'mail'=>$mail,

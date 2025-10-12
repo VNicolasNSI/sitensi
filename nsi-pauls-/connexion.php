@@ -22,8 +22,13 @@
         if ($vsession['0']>=10000000) {
             if ($vsession['0']== $_SESSION['token']) {
                 echo "Connexion directe";
+                header('Location: ../SiteNSISamuel/index.php');
+                exit();
             }
-    }
+            else {
+                echo "Veuyez vous connecter";
+            }
+        }
     }
     ?>
 
