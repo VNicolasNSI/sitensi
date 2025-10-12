@@ -1,3 +1,24 @@
+<?php 
+session_start();
+
+try {
+    $bdd = new PDO('mysql:host=sql7.freesqldatabase.com;dbname=sql7800701', 'sql7800701', 'bfhPTiR56K');
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
+
+$autorisation = $bdd->prepare("SELECT type, token FROM utilisateur WHERE token=:token");
+$autorisation->execute([
+    'token'=> $_SESSION['token'],
+]);
+$veriftoken = $autorisation->fetch();
+
+foreach ($veriftoken as $veriftokens) {
+    echo $veriftokens . "<br>";
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
