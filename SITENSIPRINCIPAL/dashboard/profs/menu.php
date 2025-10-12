@@ -14,9 +14,15 @@ $autorisation->execute([
 ]);
 $veriftoken = $autorisation->fetch();
 
-foreach ($veriftoken as $veriftokens) {
-    echo $veriftokens . "<br>";
+if ($veriftoken['type'] != "p") {
+    header('Location: ../../index.html');
+    exit();
 }
+
+if ($veriftoken["token"] != $_SESSION["token"]) {
+    header('Location: ../../index.html');
+    exit();
+} 
 ?>
 
 <!DOCTYPE html>
