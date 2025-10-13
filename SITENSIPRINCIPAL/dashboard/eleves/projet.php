@@ -29,14 +29,14 @@ try {
 	<header class="header"> 
 		<section class="page1">
 			<article>
-				<h1 class="avantpage">Page d'acceuil éléve</h1>
+				<h1 class="avantpage">Les projets de la spécilalité NSI</h1>
 			<article>
 			<nav>
-				<a class="nav1" role="button" href="index.php">Acceuil</a></li>
+				<a class="nav2" role="button" href="index.php">Acceuil</a></li>
 				<a class="nav2" role="button" href="premiere.php">Première</a></li>
 				<a class="nav2" role="button" href="terminale.php">Terminale</a></li>
-				<a class="nav2" role="button" href="projet">Projet</a></li>
-				<a class="nav2" role="button" href="defis">Défis</a></li>
+				<a class="nav1" role="button" href="projet.php">Projet</a></li>
+				<a class="nav2" role="button" href="defis.php">Défis</a></li>
 			</nav>
 			<article><hr></article>
 		</section>
@@ -45,39 +45,19 @@ try {
 <section>
 	<section class="haut">
 		<article>
-			<h1>BONJOUR nom de l'éleve !</h1>
-			<hr>
-		</article>
-	</section>
-	<section class="partie1">
-		<article class="connexion">
-			<a role="button" href="..\nsi-pauls-\index.html" class="button">DÉCONNEXION</a>
+			<img src="https://cdn.prod.website-files.com/680f3944d33b33445d655f6e/680f3944d33b33445d6566d2_gestion-stock-informatique.webp">
 		</article>
 	</section>
 	<section class="partie2">
-		<article class="connexion">
-			<a role="button" href="depot.php" class="attributa">
-			<img width="50" height="50" title="1" src="https://cdn-icons-png.flaticon.com/512/80/80942.png">
-			Cours PDF
-			</a>
+		<article>
+			<h1>En NSi nous nous réalisons de nombreux projets avec des résulatats concrets</h1>
 		</article>
-		<article class="connexion">
-			<a role="button" href="synthese.php" class="attributa">
-			<img width="50" height="50" title="8" src="https://cdn-icons-png.flaticon.com/512/722/722013.png">
-			Synthèse / Progression
-			</a>
-		</article>
-		<article class="connexion">
-			<a role="button" href="quizz.php" class="attributa">
-			<img width="50" height="50" title="0" src="https://cdn-icons-png.flaticon.com/512/3400/3400784.png">
-			Testez-Vous !
-			</a>
-		</article>
-		<article class="connexion">
-			<a role="button" href="code.php" class="attributa">
-			<img width="50" height="50" title="9" src="https://cdn-icons-png.flaticon.com/512/345/345535.png">
-			Rentrer un code
-			</a>
+		<br>
+		<article>
+			<p>Réalisation de site web
+			<br>
+			Cryptologie
+			</p>
 		</article>
 	</section>	
 </section>

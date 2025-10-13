@@ -39,7 +39,7 @@ body {
 	background-color: #31ACC8;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
-    inset -2px -2px 3px rgb(0 0 0 / 60%);
+    inset -2px -2px 3px rgb(255 255 255 / 60%);
 	
 }
 
@@ -123,10 +123,11 @@ hr {
 .partie2 {
 	display: flex;
 	justify-content: space-around;
+	flex-direction: column;
 	background-color: #31ACC8;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
-    inset -2px -2px 3px rgb(0 0 0 / 60%);
+    inset -2px -2px 3px rgb(255 255 255 / 60%);
 	flex-wrap: wrap;
 	
 }
@@ -151,7 +152,7 @@ hr {
 	background-color: #EDF1F2;
     color: #8A9B9F;
     width: 100px;
-	height: 50px;
+	height: 20px;
     border-style: solid;
     padding: 1rem 1rem 1rem 1rem;
 	margin: 10px;
@@ -163,6 +164,7 @@ hr {
 
 .nav2:hover {
 	border-color: #016178;
+	color: #016178;
 }
 
 .page1 {
@@ -174,4 +176,5 @@ hr {
 
 .avantpage {
 	padding-bottom: 20px;
+	color: #EDF1F2;
 }
