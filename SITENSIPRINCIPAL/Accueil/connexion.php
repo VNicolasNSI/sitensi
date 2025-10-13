@@ -34,7 +34,7 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="accueil.css">
+        <link rel="stylesheet" href="./accueil.css">
         <title>NSILPS - Connexion</title>
     </head>
     <body>
@@ -42,20 +42,20 @@
             <nav>
                 <ul>
                     <label>
-                        <img src="images/nsi.png" width="13%">
+                        <img src="../images/nsi.png" width="13%">
                     </label>
                     <label class="center">
                         NSILPS > Connexion
                     </label>
                     <label>
-                        <a href="index.html">Retour</a>
+                        <a href="./index.html">Retour</a>
                     </label>
                 </ul>
             </nav>
         </header>
 
         <section class="accueildeux">
-            <form method="post" action="traitement-connexion.php" class="form">
+            <form method="post" action="./traitement-connexion.php" class="form">
                 <label class="interform">Se connecter</label>
                 <article class="interform">
                     <label>Mail : </label>
@@ -70,7 +70,7 @@
                 </article>
                 <article class="interform">
                     <label>
-                        Pas de compte ? <a href="inscription.html">S'inscrire</a>
+                        Pas de compte ? <a href="./inscription.html">S'inscrire</a>
                     </label>
                 </article>
             </form>
