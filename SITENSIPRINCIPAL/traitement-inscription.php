@@ -53,7 +53,7 @@ try {
                      ]);
                      $_SESSION['token'] = $token;
                      echo 'Inscription réussie !';
-                     header('Location: ../SiteNSISamuel/index.php');
+                     header('Location: /dashboard/eleves/index.php');
                      exit();
               } else {
                      echo 'Les mdp ne correspondent pas';

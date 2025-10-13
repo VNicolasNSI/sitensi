@@ -1,3 +1,30 @@
+<?php 
+session_start();
+
+try {
+    $bdd = new PDO('mysql:host=sql7.freesqldatabase.com;dbname=sql7800701', 'sql7800701', 'bfhPTiR56K');
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
+
+$autorisation = $bdd->prepare("SELECT type, token FROM utilisateur WHERE token=:token");
+$autorisation->execute([
+    'token'=> $_SESSION['token'],
+]);
+$veriftoken = $autorisation->fetch();
+
+if ($veriftoken['type'] != "p") {
+    header('Location: ../../index.html');
+    exit();
+}
+
+if ($veriftoken["token"] != $_SESSION["token"]) {
+    header('Location: ../../index.html');
+    exit();
+} 
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,7 +53,7 @@
                 <label>Navigation</label>
             </article>
             <article class="espaceaside">
-                <a class="adash" href="dash_prof.html">Menu</a>
+                <a class="adash" href="menu.php">Menu</a>
                 <hr>
                 <a class="adash" href="classes.html">Mes classes</a>
             </article>

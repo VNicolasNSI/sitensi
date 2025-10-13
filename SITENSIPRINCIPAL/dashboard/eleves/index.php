@@ -5,6 +5,8 @@
 
 <?php 
 
+session_start();
+
 try {
     $bdd = new PDO('mysql:host=sql7.freesqldatabase.com;dbname=sql7800701', 'sql7800701', 'bfhPTiR56K');
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -51,7 +53,7 @@ try {
 	</section>
 	<section class="partie1">
 		<article class="connexion">
-			<a role="button" href="..\nsi-pauls-\index.html" class="button">DÉCONNEXION</a>
+			<a role="button" href="../../deconnexion.php" class="button">DÉCONNEXION</a>
 		</article>
 	</section>
 	<section class="partie2">

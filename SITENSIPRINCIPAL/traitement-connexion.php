@@ -20,25 +20,30 @@ $verifmdp->execute([
 ]);
 $verificationmdp = $verifmdp->fetch();
 
-$vcookie = $bdd->prepare('SELECT token FROM utilisateur WHERE mail=:mail');
-$vcookie->execute([
-    'mail'=>$mail,
-]);
-$vtoken = $vcookie->fetch();
-
 $token = rand(10000000,99999999);
-
 
 if ($mdp==$verificationmdp[0]) {
     echo "Connexion réussie !";
-    $ecriretoken = $bdd->prepare('UPDATE FROM utilisateur SET token=:token WHERE mail=:mail');
+    $ecriretoken = $bdd->prepare('UPDATE utilisateur SET token=:token WHERE mail=:mail');
     $ecriretoken->execute([
         'token'=>$token,
         'mail'=>$mail,
     ]);
     $_SESSION['token'] = $token;
-    header('Location: ../SiteNSISamuel/index.php');
-    exit();
+
+    $type = $bdd->prepare('SELECT type FROM utilisateur WHERE mail=:mail');
+    $type->execute([
+        'mail'=>$mail,
+    ]);
+    $profeleve = $type->fetch();
+
+    if ($profeleve['0'] == 'p') {
+        header('Location: ./dashboard/profs/menu.php');
+        exit();
+    } else {
+        header('Location: ./dashboard/eleves/index.php');
+        exit();
+    }
 }
 else {
     echo "Mauvais mdp ou mauvais mail";
