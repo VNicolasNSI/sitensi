@@ -152,7 +152,7 @@ hr {
 	background-color: #EDF1F2;
     color: #8A9B9F;
     width: 100px;
-	height: 50px;
+	height: 20px;
     border-style: solid;
     padding: 1rem 1rem 1rem 1rem;
 	margin: 10px;
@@ -164,6 +164,7 @@ hr {
 
 .nav2:hover {
 	border-color: #016178;
+	color: #016178;
 }
 
 .page1 {
