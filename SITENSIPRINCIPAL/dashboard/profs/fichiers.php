@@ -55,18 +55,23 @@ try {
             </article>     
         </aside>
 
-        <footer>
-            <article>
-                <br>
-                <p>&emsp;&emsp;Créé par Samuël, Farell SELLA et Valentin NICOLAS, élèves terminale du lycée Paul-Sérusier</p>
-                <p>&emsp;&emsp;Maquette réalisée par Valentin NICOLAS</p>
-                <p>&emsp;&emsp;Tout droit réservé</p>
-            </article>
-            <article>
-                &emsp;&emsp;<a href="https://lycee-serusier-carhaix.ac-rennes.fr/">Lycée Paul-Sérusier</a>
-                &emsp;<a href="plan.html">Plan du site</a>
-            </article>
-        </footer>
+        <section class="casedash">
+            <section>
+                <label> 
+                    <?php
+            $res = fopen('./stockage/LesbalisesHTML.pdf', 'rb');
+            
+            /*Tant que la fin du fichier n'est pas atteninte, c'est-à-dire
+             *tant que feof() renvoie FALSE (= tant que !feof() renvoie TRUE)
+             *on echo une nouvelle ligne du fichier*/
+            while(!feof($res)){
+                $ligne = fgets($res);
+                echo $ligne.'<br>';
+            }
+                    ?>
+                </label>
+            </section>    
+        </section>
 
     </body>
 
