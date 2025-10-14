@@ -191,12 +191,11 @@ hr {
 	background-color: #31ACC8;
 }
 .grossissement  {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 	margin-top: 40px;
-    width: 80%;
     text-align: center;
     align-items: center;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	flex-direction: column;
 }
 .grossissement:hover {
