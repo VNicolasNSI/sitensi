@@ -21,7 +21,7 @@ try {
 
 <meta charset="utf-8">
 
-<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="./base.css">
 
 </head>
 
