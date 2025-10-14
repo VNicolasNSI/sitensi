@@ -122,13 +122,12 @@ hr {
 }
 .partie2 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-direction: column;
 	background-color: #31ACC8;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(255 255 255 / 60%);
-	flex-wrap: wrap;
 	
 }
 
