@@ -5,6 +5,7 @@ body {
 	background: linear-gradient(white);
 
 }
+
 .body2 {
 	background-color: #fff;
 	overflow: auto;
@@ -122,9 +123,7 @@ hr {
 }
 .partie2 {
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	background-color: #31ACC8;
+	background-color: #016178;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(255 255 255 / 60%);
