@@ -56,17 +56,17 @@ try {
 	</article>
 </section>
 <section class="dispo1">
+	<article>
+		<img width="50" height="50" title="1" src="https://cdn-icons-png.flaticon.com/512/80/80942.png">
+	</article>
 	<article class="connexion">
 		<a role="button" href="depot.php" class="attributa">
 		Cours PDF
 		</a>
 	</article>
-	<article>
-		<img width="50" height="50" title="1" src="https://cdn-icons-png.flaticon.com/512/80/80942.png">
-	</article>
 </section>
 <section class="dispo2">
-	<article class="connexion">
+	<article class="grossissement">
 		<a role="button" href="synthese.php" class="attributa">
 		<img width="50" height="50" title="8" src="https://cdn-icons-png.flaticon.com/512/722/722013.png">
 		Synthèse / Progression
