@@ -43,7 +43,7 @@ if ($veriftoken["token"] != $_SESSION["token"]) {
                         NSILPS - Dashboard professeurs
                     </label>
                     <label>
-                        <a class="adash" href="../../index.html">Accueil</a>&emsp;&emsp;
+                        <a class="adash" href="../../Accueil/index.html">Accueil</a>&emsp;&emsp;
                     </label>
                 </ul>
             </nav>
@@ -61,7 +61,7 @@ if ($veriftoken["token"] != $_SESSION["token"]) {
                 <a class="adash" href="leçons.html">Mes leçons</a>
             </article>
             <article class="espaceaside">    
-                <a class="adash" href="fichiers.html">Fichiers</a>
+                <a class="adash" href="fichiers.php">Fichiers</a>
             </article>    
             <article class="espaceaside">
                 <a class="adash" href="quiz.html">Quiz</a>
