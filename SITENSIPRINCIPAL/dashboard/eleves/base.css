@@ -5,6 +5,7 @@ body {
 	background: linear-gradient(white);
 
 }
+
 .body2 {
 	background-color: #fff;
 	overflow: auto;
@@ -122,9 +123,9 @@ hr {
 }
 .partie2 {
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
 	background-color: #31ACC8;
+	flex-direction: column;
+	flex-wrap: wrap;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(255 255 255 / 60%);
@@ -176,4 +177,28 @@ hr {
 .avantpage {
 	padding-bottom: 20px;
 	color: #EDF1F2;
+}
+.dipo1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	background-color: #31ACC8;
+}
+.dipo2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	background-color: #31ACC8;
+}
+.grossissement  {
+    margin-bottom: 40px;
+	margin-top: 40px;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+	transition: all 0.3s ease-in-out;
+	flex-direction: column;
+}
+.grossissement:hover {
+	transform: scale(1.1);
 }
