@@ -59,7 +59,7 @@ try {
 	<article>
 		<img width="50" height="50" title="1" src="https://cdn-icons-png.flaticon.com/512/80/80942.png">
 	</article>
-	<article class="connexion">
+	<article class="grossissement">
 		<a role="button" href="depot.php" class="attributa">
 		Cours PDF
 		</a>
@@ -74,7 +74,7 @@ try {
 	</article>
 </section>
 <section>
-	<article class="connexion">
+	<article class="grossissement">
 		<a role="button" href="quizz.php" class="attributa">
 		<img width="50" height="50" title="0" src="https://cdn-icons-png.flaticon.com/512/3400/3400784.png">
 		Testez-Vous !
@@ -82,7 +82,7 @@ try {
 	</article>
 </section>
 <section>
-	<article class="connexion">
+	<article class="grossissement">
 		<a role="button" href="code.php" class="attributa">
 		<img width="50" height="50" title="9" src="https://cdn-icons-png.flaticon.com/512/345/345535.png">
 		Rentrer un code
