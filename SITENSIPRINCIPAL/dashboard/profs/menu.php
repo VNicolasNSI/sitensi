@@ -20,7 +20,7 @@ if ($veriftoken['type'] != "p") {
 }
 
 if ($veriftoken["token"] != $_SESSION["token"]) {
-    header('Location: ../../index.html');
+    header('Location: ../../Accueil/index.html');
     exit();
 } 
 ?>
@@ -29,7 +29,7 @@ if ($veriftoken["token"] != $_SESSION["token"]) {
 <html>
     <head>
         <meta charset="utf-8">    
-        <link rel="stylesheet" href="../../accueil.css">
+        <link rel="stylesheet" href="../../Accueil/accueil.css">
         <title>NSILPS - Dashboard professeurs</title>
     </head>
     <body class="bodydash">
