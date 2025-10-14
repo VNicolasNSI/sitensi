@@ -344,3 +344,19 @@ aside {
 a {
     color: #EDF1F2;
 }
+
+.casedash2 {
+    display: flex;
+    justify-content: center;
+    padding-right: 20%;
+    margin: 50px 150px 50px 250px;
+    border-width: 2px;
+    border-color: #0d1b4c;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: aliceblue;
+    color: #0a0a0a;
+    box-shadow: 4px 4px #0a0a0a;
+    font-size: 20px;
+    height: 200% ;
+}

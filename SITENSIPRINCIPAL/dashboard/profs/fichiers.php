@@ -55,23 +55,15 @@ try {
             </article>     
         </aside>
 
-        <section class="casedash">
+        <section class="casedash2">
             <section>
                 <label> 
-                    <?php
-            $res = fopen('./stockage/LesbalisesHTML.pdf', 'rb');
-            
-            /*Tant que la fin du fichier n'est pas atteninte, c'est-à-dire
-             *tant que feof() renvoie FALSE (= tant que !feof() renvoie TRUE)
-             *on echo une nouvelle ligne du fichier*/
-            while(!feof($res)){
-                $ligne = fgets($res);
-                echo $ligne.'<br>';
-            }
-                    ?>
+                    <iframe src="./stockage/LesbalisesHTML.pdf" width="200%" height="100%"> </iframe>
                 </label>
             </section>    
         </section>
+
+        
 
     </body>
 
