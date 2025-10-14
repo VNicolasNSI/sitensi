@@ -20,7 +20,7 @@ if ($veriftoken['type'] != "p") {
 }
 
 if ($veriftoken["token"] != $_SESSION["token"]) {
-    header('Location: ../../index.html');
+    header('Location: ../../Accueil/index.html');
     exit();
 } 
 ?>
@@ -29,7 +29,7 @@ if ($veriftoken["token"] != $_SESSION["token"]) {
 <html>
     <head>
         <meta charset="utf-8">    
-        <link rel="stylesheet" href="../../accueil.css">
+        <link rel="stylesheet" href="../../Accueil/accueil.css">
         <title>NSILPS - Dashboard professeurs</title>
     </head>
     <body class="bodydash">
@@ -70,6 +70,85 @@ if ($veriftoken["token"] != $_SESSION["token"]) {
                 <a class="adash" href="statistiques.html">Stats</a>
             </article>     
         </aside>
+
+        <section>
+            <section class="casedash">
+                <label class="titre2"> 
+                    <?php
+                        $nom = $bdd->prepare('SELECT Prenom, Nom FROM utilisateur WHERE token=:token');
+                        $nom->execute([
+                            'token'=> $_SESSION['token'],
+                        ]);
+                        $affichernom = $nom->fetch();
+
+                        $bienvenue = rand(0,19);
+
+                        switch ($bienvenue) {
+                            case 0:
+                                echo "Bienvenue, ";
+                                break;
+                            case 1:
+                                echo "Ravis de vous revoir, ";
+                                break;
+                            case 2:
+                                echo "Bon retour parmis nous, ";
+                                break;
+                            case 3:
+                                echo "Heureux de vous accueillir, ";
+                                break;
+                            case 4:
+                                echo "Vous nous aviez manqué, ";
+                                break;
+                            case 5:
+                                echo "Quel plaisir de vous revoir, ";
+                                break;
+                            case 6:
+                                echo "Bonjour, ";
+                                break;
+                            case 7:
+                                echo "Bonsoir, ";
+                                break;
+                            case 8:
+                                echo "Toutes nos salutations distinguées, ";
+                                break;
+                            case 9:
+                                echo "On vous attendait avec impatience, ";
+                                break;
+                            case 10:
+                                echo "Votre fidélité nous fait chaud au cœur, ";
+                                break;
+                            case 11:
+                                echo "Heureux de vous avoir parmi nous une fois encore, ";
+                                break;
+                            case 12:
+                                echo "Nous sommes honorés de votre retour, ";
+                                break;
+                            case 13:
+                                echo "Re-bienvenue, ";
+                                break;
+                            case 14:
+                                echo "Prêt pour un nouveau tour ? ";
+                                break;
+                            case 15:
+                                echo "Toujours un plaisir de vous revoir ici, ";
+                                break;
+                            case 16:
+                                echo "Le comeback tant attendu ! ";
+                                break;
+                            case 18:
+                                echo "Voilà un visage familier qu’on adore revoir, ";
+                                break;
+                            case 19:
+                                echo "Ça fait longtemps, mais pas trop, ";
+                                break;
+                        }
+
+                        echo $affichernom['Prenom'],' ', $affichernom['Nom'], ' !';
+                    ?>
+                </label>
+            </section>    
+        </section>
+
         <section>
             <section class="casedash">
                 <article class="intercasedash">

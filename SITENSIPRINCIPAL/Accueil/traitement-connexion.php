@@ -38,10 +38,10 @@ if ($mdp==$verificationmdp[0]) {
     $profeleve = $type->fetch();
 
     if ($profeleve['0'] == 'p') {
-        header('Location: ./dashboard/profs/menu.php');
+        header('Location: ../dashboard/profs/menu.php');
         exit();
     } else {
-        header('Location: ./dashboard/eleves/index.php');
+        header('Location: ../dashboard/eleves/index.php');
         exit();
     }
 }

@@ -37,7 +37,7 @@ try {
 
        if ($verifyemail) {            
               echo "L'adresse mail existe déjà !";
-              header('Location: erreur/101.html');
+              header('Location: ../erreur/101.html');
               exit();
        } else {
               if ($mdp == $verifmdp) {
@@ -53,7 +53,7 @@ try {
                      ]);
                      $_SESSION['token'] = $token;
                      echo 'Inscription réussie !';
-                     header('Location: /dashboard/eleves/index.php');
+                     header('Location: ../dashboard/eleves/index.php');
                      exit();
               } else {
                      echo 'Les mdp ne correspondent pas';
