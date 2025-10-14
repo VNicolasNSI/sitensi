@@ -124,6 +124,7 @@ hr {
 .partie2 {
 	display: flex;
 	background-color: #31ACC8;
+	flex-direction: column;
 	flex-wrap: wrap;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
@@ -180,5 +181,12 @@ hr {
 .dipo1 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: left;
+	background-color: #31ACC8;
+}
+.dipo2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	background-color: #31ACC8;
 }
