@@ -60,22 +60,32 @@ try {
                 <article class="titre">
                     <label>Première ---</label>
                 </article>
-                <section>
+                <section class="fleche">
                     <article class="parties">
                         <label>Web</label>
                     </article>
+                    <article>
+                        <img src="../../images/fleche.png" width="5%">
+                    </article>
+                </section>
                     <br>
+                <section class="fleche">
                     <article class="parties">
                         <label>Formulaires</label>
                     </article>
+                </section>
                     <br>
+                <section class="fleche">
                     <article class="parties">
                         <label>Python</label>
                     </article>
+                </section>
                     <br>
+                <section class="fleche">
                     <article class="parties">
-                        <label>binaire</label>
+                        <label>binaire</label>  
                     </article>
+                </section>
                 </section>
             </section>   
         </section>
