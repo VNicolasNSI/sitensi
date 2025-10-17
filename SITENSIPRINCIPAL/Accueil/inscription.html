@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="accueil.css">
+        <title>NSILPS - Inscription</title>
+    </head>
+    <body>
+         <header>
+            <nav>
+                <ul>
+                    <label>
+                        <img src="../images/nsi.png" width="13%">
+                    </label>
+                    <label class="center">
+                        NSILPS > Créer un compte
+                    </label>
+                    <label>
+                        <a href="./index.html">Retour</a>
+                    </label>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="accueildeux">
+            <form method="post" action="./traitement-inscription.php" class="form">
+                <label class="interform">Créer un compte</label>
+                <article class="interform">
+                    <label>Prénom : &emsp;</label>
+                    <input type="text" name="prenom"/>
+                </article>
+                <article class="interform">
+                    <label>Nom : &emsp;</label>
+                    <input type="text" name="nom"/>
+                </article>
+                <article class="interform">
+                    <label>Date de naissance : &emsp;</label>
+                    <input type="date" name="ddn"/>
+                </article>
+                <article class="interform">
+                    <label>Mail : &emsp;</label>
+                    <input type="email" name="mail"/>
+                </article>
+                <article class="interform">
+                    <label>Mot de passe : &emsp;</label>
+                    <input type="password" name="mdp" />
+                </article>
+                <article class="interform">
+                    <label>Répéter le mot de passe : &emsp;</label>
+                    <input type="password" name="verifmdp"/>
+                </article>
+                <article class="interformsubmit">
+                    <input class="submit" type="submit">
+                </article>
+                <article class="interform">
+                    <label>
+                        Un compte ? <a href="./connexion.php">Se connecter</a>
+                    </label>
+                </article>
+                <article class="interform">
+                    <label>
+                        NE PAS TOUCHER<a href="./supp.php">NE PAS TOUCHER</a>
+                    </label>
+                </article>
+            </form>
+        </section>
+
+
+
+</html>
