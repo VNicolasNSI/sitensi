@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+	background-color: #EDF1F2;
 	overflow: auto;
 	width: 100%;
 	background: linear-gradient(white);
@@ -7,7 +7,7 @@ body {
 }
 
 .body2 {
-	background-color: #fff;
+	background-color: #EDF1F2;
 	overflow: auto;
 	width: 100%;
 	background: linear-gradient(white);
@@ -108,7 +108,7 @@ hr {
     width: 340px;
 	height: 120px;
     border: none;
-    padding: 2rem 2rem 2rem 4rem;
+    padding: 2rem 2rem 2rem 2rem;
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
@@ -125,6 +125,7 @@ hr {
 	display: flex;
 	background-color: #31ACC8;
 	flex-direction: column;
+	justify-self: stretch;
 	flex-wrap: wrap;
 	box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
@@ -178,17 +179,9 @@ hr {
 	padding-bottom: 20px;
 	color: #EDF1F2;
 }
-.dipo1 {
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	background-color: #31ACC8;
-}
-.dipo2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: right;
-	background-color: #31ACC8;
+.dispo {
+	padding: -40px;
+
 }
 .grossissement  {
 	margin-bottom: 40px;
@@ -200,4 +193,17 @@ hr {
 }
 .grossissement:hover {
 	transform: scale(1.1);
+}
+.dispo1 {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+
+}
+.hr {
+    height: 2px;
+    background: #fff;
+    margin: 50px 0;
+    width: 100%;
+    color: #fff;
 }
