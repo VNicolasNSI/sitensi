@@ -1,0 +1,129 @@
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    position: relative;
+    align-items: center;
+    font-size: 20px;
+}
+
+nav {
+    border-bottom: 1px solid #2c3e50;
+    justify-content: center;
+    margin-left: -8px;
+    margin-right: 20px;
+    margin-top: -20px;
+    background-color: #31ABC8;
+    color: #EDF1F2;
+}
+
+aside {
+    width: 7%;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    float: left;
+    color: white;
+    height: 221%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-style: solid;
+    border-left: #1c1c1c;
+    border-bottom: #1c1c1c;
+    border-top: #0a0a0a;
+    background-color: #486eb1;
+
+}
+
+.bodydash {
+    background: linear-gradient(360deg,#0d1b4c, #2a5298);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+
+.navdash {
+    background-color: #2a5298;
+}
+
+.casedash {
+    display: flex;
+    justify-content: left;
+    margin: 50px 150px 50px 250px;
+    padding: 10px 20px 5px 20px;
+    border-width: 2px;
+    border-color: #0d1b4c;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: white;
+    color: #0a0a0a;
+    box-shadow: 4px 4px #0a0a0a;
+    font-size: 20px;
+}
+
+.espaceaside {
+    padding-bottom: 25px;
+}
+
+.casedash2 {
+    display: flex;
+    justify-content: center;
+    padding-right: 20%;
+    margin: 50px 150px 50px 250px;
+    border-width: 2px;
+    border-color: #0d1b4c;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: aliceblue;
+    color: #0a0a0a;
+    box-shadow: 4px 4px #0a0a0a;
+    font-size: 20px;
+    height: 200% ;
+}
+
+a {
+    color: #EDF1F2;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: crosshair;
+}
+
+hr {
+    height: 2px;
+    background: white;
+    margin: 20px 0;
+    width: 80%;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.parties {
+    padding-top: 1%;
+    border-bottom: black;
+    border-style: solid;
+    border-right: white;
+    border-top: white;
+    border-left: white;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.dossier {
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.titre {
+    font-size: 30px;
+}
