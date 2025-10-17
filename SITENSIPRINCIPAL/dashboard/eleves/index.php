@@ -55,39 +55,44 @@ try {
 		<a role="button" href="../../Accueil/deconnexion.php" class="button">DÉCONNEXION</a>
 	</article>
 </section>
-<section class="dispo1">
-	<article>
-		<img width="50" height="50" title="1" src="https://cdn-icons-png.flaticon.com/512/80/80942.png">
-	</article>
-	<article class="grossissement">
-		<a role="button" href="depot.php" class="attributa">
-		Cours PDF
-		</a>
-	</article>
-</section>
-<section class="dispo2">
-	<article class="grossissement">
-		<a role="button" href="synthese.php" class="attributa">
-		<img width="50" height="50" title="8" src="https://cdn-icons-png.flaticon.com/512/722/722013.png">
-		Synthèse / Progression
-		</a>
-	</article>
-</section>
-<section>
-	<article class="grossissement">
-		<a role="button" href="quizz.php" class="attributa">
-		<img width="50" height="50" title="0" src="https://cdn-icons-png.flaticon.com/512/3400/3400784.png">
-		Testez-Vous !
-		</a>
-	</article>
-</section>
-<section>
-	<article class="grossissement">
-		<a role="button" href="code.php" class="attributa">
-		<img width="50" height="50" title="9" src="https://cdn-icons-png.flaticon.com/512/345/345535.png">
-		Rentrer un code
-		</a>
-	</article>
+<section class="partie2">
+	<section>
+		<article class="dispo1">
+			<img width="50" height="50" title="1" src="https://cdn-icons-png.flaticon.com/512/80/80942.png">
+		</article>
+		<article class="grossissement">
+			<a role="button" href="depot.php" class="attributa">
+			Cours PDF
+			</a>
+		</article>
+	</section>
+	<hr class="hr">
+	<section>
+		<article class="grossissement">
+			<a role="button" href="synthese.php" class="attributa">
+			<img width="50" height="50" title="8" src="https://cdn-icons-png.flaticon.com/512/722/722013.png" class="dispo">
+			Synthèse / Progression
+			</a>
+		</article>
+	</section>
+	<hr class="hr">
+	<section>
+		<article class="grossissement">
+			<a role="button" href="quizz.php" class="attributa">
+			<img width="50" height="50" title="0" src="https://cdn-icons-png.flaticon.com/512/3400/3400784.png">
+			Testez-Vous !
+			</a>
+		</article>
+	</section>
+	<hr class="hr">
+	<section>
+		<article class="grossissement">
+			<a role="button" href="code.php" class="attributa">
+			<img width="50" height="50" title="9" src="https://cdn-icons-png.flaticon.com/512/345/345535.png">
+			Rentrer un code
+			</a>
+		</article>
+	</section>
 </section>
 <footer> 
 	<p>Posté par Samuel, le <time datetime="2025-05-09">5 septembre 2025</time>
