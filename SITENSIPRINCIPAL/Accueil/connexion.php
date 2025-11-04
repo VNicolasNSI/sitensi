@@ -26,7 +26,7 @@
                 exit();
             }
             else {
-                echo "Veuyez vous connecter";
+                echo "Veuillez vous connecter";
             }
         }
     }

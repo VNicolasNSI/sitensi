@@ -54,9 +54,10 @@ try {
 		</article>
 		<br>
 		<article>
-			<p>Réalisation de site web
+			<p>
+			<em>Réalisation de site web</em>
 			<br>
-			Cryptologie
+			<em>Cryptologie</em>
 			</p>
 		</article>
 	</section>	
