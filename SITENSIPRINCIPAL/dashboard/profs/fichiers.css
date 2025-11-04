@@ -85,10 +85,6 @@ aside {
     height: 200% ;
 }
 
-a {
-    color: #EDF1F2;
-}
-
 html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: crosshair;
@@ -127,4 +123,8 @@ hr {
     border-top: white;
     border-left: white;
     padding-bottom: 2%;
+}
+
+.noir {
+    color: black;
 }

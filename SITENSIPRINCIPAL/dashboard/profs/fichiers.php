@@ -63,9 +63,11 @@ try {
                 <section class="fleche">
                     <article class="parties">
                         <label>Web</label>
+                        <br>
+                        <label><a class="noir" href="./stockage/Premiere/LesbalisesHTML.pdf">test</a></label>
                     </article>
                     <article>
-                        <img src="../../images/fleche.png" width="5%">
+                        <img src="../../images/fleche.png" width="30%">
                     </article>
                 </section>
                     <br>
