@@ -208,3 +208,8 @@ hr {
     width: 100%;
     color: #fff;
 }
+
+.border {
+	border-style: solid;
+	border-color: #016178;
+}

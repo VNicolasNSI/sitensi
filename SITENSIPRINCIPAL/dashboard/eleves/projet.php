@@ -45,7 +45,7 @@ try {
 <section>
 	<section class="haut">
 		<article>
-			<img src="https://cdn.prod.website-files.com/680f3944d33b33445d655f6e/680f3944d33b33445d6566d2_gestion-stock-informatique.webp">
+			<img src="https://www.haro.com/site/assets/files/13911/at_volksschule_stumm_62_full.1200x630.jpg" class="border">
 		</article>
 	</section>
 	<section class="partie2">
