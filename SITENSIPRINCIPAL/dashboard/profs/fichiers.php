@@ -2,7 +2,7 @@
 session_start();
 
 try {
-    $bdd = new PDO('mysql:host=localhost;dbname=test', 'root', 'root');
+    $bdd = new PDO('mysql:host=localhost;dbname=nsilps', 'root', 'root');
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
@@ -13,7 +13,7 @@ try {
 <html>
     <head>
         <meta charset="utf-8">    
-        <link rel="stylesheet" href="../../Accueil/accueil.css">
+        <link rel="stylesheet" href="./fichiers.css">
         <title>NSILPS - Dashboard professeurs</title>
     </head>
     <body class="bodydash">
@@ -55,16 +55,48 @@ try {
             </article>     
         </aside>
 
-        <section class="casedash2">
-            <section>
-                <label> 
-                    <iframe src="./stockage/LesbalisesHTML.pdf" width="200%" height="100%"> </iframe>
-                </label>
-            </section>    
+        <section class="casedash">
+            <section class="dossier">
+                <article class="titre">
+                    <label>Première ---</label>
+                </article>
+                <section class="fleche">
+                    <article class="parties">
+                        <label>Web</label>
+                    </article>
+                    <article>
+                        <img src="../../images/fleche.png" width="5%">
+                    </article>
+                </section>
+                    <br>
+                <section class="fleche">
+                    <article class="parties">
+                        <label>Formulaires</label>
+                    </article>
+                </section>
+                    <br>
+                <section class="fleche">
+                    <article class="parties">
+                        <label>Python</label>
+                    </article>
+                </section>
+                    <br>
+                <section class="fleche">
+                    <article class="parties">
+                        <label>binaire</label>  
+                    </article>
+                </section>
+                </section>
+            </section>   
         </section>
 
-        
+        <section class="casedash2">
+            <section>
+                <section>
 
+                </section>
+            </section>    
+        </section>
     </body>
 
 
