@@ -45,13 +45,13 @@ try {
 <section>
 	<section class="haut">
 		<article>
-			<img src="https://www.nuitducode.net/img/open-graph.png">
+			<img src="https://www.nuitducode.net/img/open-graph.png" class="border">
 		</article>
 	</section>
 	<section class="partie2">
 		<article>
 			<h1>
-				Durant l'année, de nombreux défis vont nous être opposer.
+				Durant l'année, de nombreux défis vont nous être proposé.
 				Chacun dans le but de nous tester dans certains domaines tout en s'amusant dans une abiance conviviale.
 			</h1>
 		</article>
