@@ -67,7 +67,10 @@ try {
                         <label><a class="noir" href="./stockage/Premiere/LesbalisesHTML.pdf">test</a></label>
                     </article>
                     <article>
-                        <img src="../../images/fleche.png" width="30%">
+                        <img src="../../images/fleche.png" width="10%">
+                        <br>
+                        <a href="./stockage/Premiere/LesbalisesHTML.pdf" download="LesbalisesHTML.pdf"><img src="../../images/telecharger.png" width="5%">
+                        </a>
                     </article>
                 </section>
                     <br>
