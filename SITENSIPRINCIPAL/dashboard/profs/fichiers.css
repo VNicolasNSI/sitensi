@@ -128,3 +128,8 @@ hr {
 .noir {
     color: black;
 }
+
+a {
+    color: white;
+    cursor: pro;
+}
