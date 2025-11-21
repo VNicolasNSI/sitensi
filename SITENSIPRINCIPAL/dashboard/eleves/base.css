@@ -131,6 +131,7 @@ hr {
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(255 255 255 / 60%);
 	text-align: center;
+	filter: blur(1.5rem);
 	
 }
 
